@@ -37,37 +37,4 @@
         .container {
             background-color: rgb(0, 0, 0);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-style: dashed;
-        }
-   </style>
-</head>
-<body>
-    <center>
-    <div class="container">
-        <div class="goku">
-                <h1>BMI CALCULATER</h1>
-                <h1>S.DEEPAKKUMAR(25016457)</h1>
-    <form method="post">
-        {% csrf_token %}
-        <label for="height">HEIGHT [cm]:</label>
-        <input type="text" id="height" name="height" required>
 
-        <label for="weight">WEIGHT [kg]:</label>
-        <input type="text" id="weight" name="weight" required>
-
-        <input type="submit" value="CALCULATE_BMI">
-    </form>
-
-    {% if bmi %}
-        <h2>YOUR BMI: {{ bmi }}</h2>
-        {% if category %}
-            <p>Category: {{ category }}</p>
-        {% endif %}
-    {% endif %}
-        </div>
-    </div>
-    </center>
-</body>
-</html>

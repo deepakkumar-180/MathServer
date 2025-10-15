@@ -5,10 +5,10 @@
 
 
 ## FORMULA:
-BMI = W?H<sup>2</sup>
+BMI = W/(H/100)<sup>2</sup>
 <br> BMI --> Body Mass Index
 <br> W --> weight
-<br> I --> height
+<br> H --> height
 
 ## DESIGN STEPS:
 
@@ -156,4 +156,4 @@ def calculate_bmi(request):
 
 
 ## RESULT:
-The program for performing server side processing is completed successful============--------------------------------------/*/
+The program for performing server side processing is completed successful
